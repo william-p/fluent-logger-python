@@ -33,4 +33,4 @@ class TestSender(unittest.TestCase):
         eq('test.foo', data[0][0])
         eq({'bar': 'baz'}, data[0][2])
         self.assertTrue(data[0][1])
-        self.assertTrue(isinstance(data[0][1], int))
+        self.assertTrue(isinstance(data[0][1], float))

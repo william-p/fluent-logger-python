@@ -43,7 +43,7 @@ class TestHandler(unittest.TestCase):
         eq('userA', data[0][2]['from'])
         eq('userB', data[0][2]['to'])
         self.assertTrue(data[0][1])
-        self.assertTrue(isinstance(data[0][1], int))
+        self.assertTrue(isinstance(data[0][1], float))
 
     def test_custom_fmt(self):
         handler = fluent.handler.FluentHandler('app.follow', port=self._port)
